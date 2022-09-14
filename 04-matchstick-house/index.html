@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        // Six matchsticks make one house.
+        // But one matchstick is always shared between two houses
+        // So every extra matchhouse is less one matchstick because its being shared with another house
+        // eg six match stick makes one house but eleven stick make two houses
+        // thats because they share one of the sticks
+        // So the base/constant is 5
+
+        const total = (num) => {
+            let a = (5*num) +1;
+            return a;
+        }
+
+        document.getElementById("demo").innerHTML = total(1);
+
+    </script>   
+</body>
+</html>
